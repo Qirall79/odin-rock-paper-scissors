@@ -58,6 +58,7 @@ img{
 
 .won, .lost, .tie{
     display: none;
+    font-weight: 700;
 }
 
 .won{
