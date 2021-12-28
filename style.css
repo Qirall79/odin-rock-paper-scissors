@@ -1,0 +1,106 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 97);
+    text-align: center;
+    padding: 2rem;
+}
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+h1{
+    color: white;
+    margin-bottom: 5rem;
+    font-size: 4.5rem;
+}
+
+.score{
+    color: rgb(255, 196, 0);
+    font-size: 2rem;
+}
+
+.computer{
+    margin-left: 2.5rem;
+    color: white;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.player{
+    margin-right: 2.5rem;
+    color: white;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.select{
+    display: flex;
+    width: 50vw;
+    height: 300px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.won, .lost, .tie{
+    display: none;
+}
+
+.won{
+    color: green;
+}
+
+.lost{
+    color: red;
+}
+
+.tie{
+    color: lightblue;
+}
+
+.finish{
+    background-color: white;
+    width: 650px;
+    max-width: 100vw;
+    height: 500px;
+    padding: 3rem;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    display: none;
+}
+
+.finish p{
+    font-size: 2.5rem;
+}
+.finish button{
+    padding: 1rem 2.5rem;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
